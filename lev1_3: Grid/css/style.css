@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 400px 100px;
+    grid-template-areas: 
+        "Header Header Header Header"
+        "Sidebar Main_Content Main_Content Main_Content"
+        "Footer Footer Footer Footer"
+    ;
+}
+
+.header {
+    background-color: blue;
+    grid-area: Header;
+}
+
+.sidebar {
+    background-color: green;
+    grid-area: Sidebar;
+}
+
+.main__content {
+    background-color: red;
+    grid-area: Main_Content;
+}
+
+.footer {
+    background-color: purple;
+    grid-area: Footer;
+}
